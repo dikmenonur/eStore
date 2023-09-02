@@ -1,4 +1,5 @@
 ﻿using eStore.Orchestrator.HttpRepositories.Interfaces;
+using eStore.Shared.DTOs.Basket;
 
 namespace eStore.Orchestrator.HttpRepositories
 {
@@ -16,5 +17,9 @@ namespace eStore.Orchestrator.HttpRepositories
             throw new NotImplementedException();
         }
 
+        public Task<CartDto> GetBasketAsync(long cartId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

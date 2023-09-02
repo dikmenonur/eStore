@@ -1,4 +1,6 @@
-﻿namespace eStore.Orchestrator.HttpRepositories.Interfaces
+﻿using eStore.Shared.DTOs.Basket;
+
+namespace eStore.Orchestrator.HttpRepositories.Interfaces
 {
     public interface IBasketHttpRepository
     {
