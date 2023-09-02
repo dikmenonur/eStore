@@ -1,5 +1,6 @@
 ﻿using eStore.Orchestrator.HttpRepositories.Interfaces;
 using eStore.Orchestrator.Services.Interfaces;
+using eStore.Shared.DTOs.Basket;
 
 namespace eStore.Orchestrator.Services
 {
@@ -26,8 +27,6 @@ namespace eStore.Orchestrator.Services
             try
             {
                 _basket = await _basketHttpRepository.GetBasketAsync(cartId);
-
-                //_orderId = await _orderHttpRepository.CreateOrder(_basket);
 
                 foreach (var item in _basket.BasketItems)
                 {
