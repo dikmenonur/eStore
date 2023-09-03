@@ -12,7 +12,7 @@ namespace eStore.IdentityService.API.Services
             }
         };
 
-        public async Task<AuthenticateModel> Authenticate(string username, string password)
+        public async Task<AuthenticateModel> AuthenticateTest(string username, string password)
         {
             var user = await Task.Run(() => _users.SingleOrDefault(x => x.Username == username && x.Password == password));
 
@@ -21,12 +21,12 @@ namespace eStore.IdentityService.API.Services
                 return null;
 
             // authentication successful so return user details without password
-            return user.WithoutPassword();
+            return user;
         }
 
         public async Task<IEnumerable<AuthenticateModel>> GetAll()
         {
-            return await Task.Run(() => _users.WithoutPasswords());
+            return await Task.Run(() => _users);
         }
     }
 }
