@@ -21,7 +21,7 @@ Olay Kaynaklı Mimarileri Kullanma: Veri değişiklikleri ve olaylar, olay kayna
 En İyi Uygulama ve Tasarım Şablonlarının Kullanma: Proje, en iyi uygulama prensiplerine ve tasarım şablonlarına uygun olarak geliştirilecektir. Bu, kodun sürdürülebilirliği ve geliştirilebilirliği için önemlidir.
 
 Bu hedefler doğrultusunda, eTicaret uygulamanızı daha güçlü, ölçeklenebilir ve sürdürülebilir bir şekilde geliştirmeyi amaçlıyoruz.
-
+```
 eStore/
 ├── src/
 │   ├── apigateways
@@ -54,7 +54,7 @@ eStore/
 ├── tests/
 │   ├── eStore.Tests/             # Test Projeleri
 └── eStore.sln                     # Visual Studio Solution
-
+```
 
 # 1. The Purposes of This Project
 Microservices ile DDD Uygulaması
