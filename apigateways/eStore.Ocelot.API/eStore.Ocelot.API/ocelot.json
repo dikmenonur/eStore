@@ -1,0 +1,33 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/ocelot/order",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/order",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5445
+        }
+      ],
+      "SwaggerKey": "order-service"
+    }
+
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "order-service",
+      "Config": [
+        {
+          "Name": "order API",
+          "Version": "v1",
+          "Url": "http://localhost:5002/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5020"
+  }
+}
