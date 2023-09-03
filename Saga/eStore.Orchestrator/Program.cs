@@ -20,17 +20,17 @@ builder.Services.AddScoped<ICheckoutSagaService, CheckoutSagaService>();
 
 builder.Services.AddHttpClient<IOrderHttpRepository, OrderHttpRepository>("OrdersAPI", (s, c) =>
 {
-    c.BaseAddress = new Uri("http://localhost:5005/api/");
+    c.BaseAddress = new Uri("http://localhost:5001/api/");
 });
 
 builder.Services.AddHttpClient<IBasketHttpRepository, BasketHttpRepository>("BasketsAPI", (s, c) =>
 {
-    c.BaseAddress = new Uri("http://localhost:5003/api/");
+    c.BaseAddress = new Uri("http://localhost:5002/api/");
 });
 
 builder.Services.AddHttpClient<IInventoryHttpRepository, InventoryHttpRepository>("InventoryAPI", (s, c) =>
 {
-    c.BaseAddress = new Uri("http://localhost:5005/api/");
+    c.BaseAddress = new Uri("http://localhost:5003/api/");
 });
 
 var app = builder.Build();
