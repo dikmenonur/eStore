@@ -25,32 +25,32 @@ Bu hedefler doğrultusunda, eTicaret uygulamanızı daha güçlü, ölçeklenebi
 eStore/
 ├── src/
 │   ├── apigateways
-│   ├── ├── eStore.Ocelot.API      # Ocelot API Ağ Geçidi
+│   │   ├── eStore.Ocelot.API      # Ocelot API Ağ Geçidi
 │   ├── SagaOrchestrator
-│   ├── ├── eStore.Orchestrator
+│   │   ├── eStore.Orchestrator
 │   ├── Services
-│   ├──├── Customer
-│   ├── eStore.Customer.Data/        # Customer Uygulama için Servisleri ve Komutları
-│   ├── eStore.Customer.Core/        # DDD ile ilgili Varlıklar ve Aggregates
-│   ├── eStore.Customer.Services/    # Veri Erişim Katmanı, CQRS İçin Event Store
-│   ├── eStore.Customer.API/         # Web API Katmanı
-│   ├──├── Order
-│   ├── eStore.Order.Data/           # Uygulama Servisleri ve Komutları
-│   ├── eStore.Order.Core/           # DDD ile ilgili Varlıklar ve Aggregates
-│   ├── eStore.Order.Services/       # Veri Erişim Katmanı, CQRS İçin Event Store
-│   ├── eStore.Order.API/            # Web API Katmanı
-│   ├──├── Identity
-│   ├── eStore.Identity.Data/        # Uygulama Servisleri ve Komutları
-│   ├── eStore.Identity.Core/        # DDD ile ilgili Varlıklar ve Aggregates
-│   ├── eStore.Identity.Services/    # Veri Erişim Katmanı, CQRS İçin Event Store
-│   ├── eStore.API/                  # Web API Katmanı
-│   ├──├── Product
-│   ├── eStore.Product.Data/         # Uygulama Servisleri ve Komutları
-│   ├── eStore.Product.Core/         # DDD ile ilgili Varlıklar ve Aggregates
-│   ├── eStore.Product.Services/     # Veri Erişim Katmanı, CQRS İçin Event Store
-│   ├── eStore.Product.API/          # Web API Katmanı
+│   │   ├── Customer
+│   │   │   ├── eStore.Customer.Data/        # Customer Uygulama için Servisleri ve Komutları
+│   │   │   ├── eStore.Customer.Core/        # DDD ile ilgili Varlıklar ve Aggregates
+│   │   │   ├── eStore.Customer.Services/    # Veri Erişim Katmanı, CQRS İçin Event Store
+│   │   │   ├── eStore.Customer.API/         # Web API Katmanı
+│   │   ├── Order
+│   │   │   ├── eStore.Order.Data/           # Uygulama Servisleri ve Komutları
+│   │   │   ├── eStore.Order.Core/           # DDD ile ilgili Varlıklar ve Aggregates
+│   │   │   ├── eStore.Order.Services/       # Veri Erişim Katmanı, CQRS İçin Event Store
+│   │   │   ├── eStore.Order.API/            # Web API Katmanı
+│   │   ├── Identity
+│   │   │   ├── eStore.Identity.Data/        # Uygulama Servisleri ve Komutları
+│   │   │   ├── eStore.Identity.Core/        # DDD ile ilgili Varlıklar ve Aggregates
+│   │   │   ├── eStore.Identity.Services/    # Veri Erişim Katmanı, CQRS İçin Event Store
+│   │   │   ├── eStore.API/                  # Web API Katmanı
+│   │   ├── Product
+│   │   │   ├── eStore.Product.Data/         # Uygulama Servisleri ve Komutları
+│   │   │   ├── eStore.Product.Core/         # DDD ile ilgili Varlıklar ve Aggregates
+│   │   │   ├── eStore.Product.Services/     # Veri Erişim Katmanı, CQRS İçin Event Store
+│   │   │   ├── eStore.Product.API/          # Web API Katmanı
 │   ├── Tools
-│   ├── eStore.Shared/               # Ortak Kütüphane ve Araçlar
+│   │   ├── eStore.Shared/               # Ortak Kütüphane ve Araçlar
 ├── tests/
 │   ├── eStore.Tests/             # Test Projeleri
 └── eStore.sln                     # Visual Studio Solution
