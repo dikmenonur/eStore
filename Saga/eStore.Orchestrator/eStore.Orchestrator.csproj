@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\eStore.Shared\eStore.Shared.csproj" />
+    <ProjectReference Include="..\..\tools\eStore.Shared\eStore.Shared.csproj" />
   </ItemGroup>
 
 </Project>
