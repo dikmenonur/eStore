@@ -60,8 +60,10 @@ internal class Program
         });
 
 
-        app.UseSwaggerForOcelotUI(
-            opt => { opt.PathToSwaggerGenerator = "/swagger/docs"; });
+        app.UseSwaggerForOcelotUI(opt =>
+        {
+            opt.PathToSwaggerGenerator = "/swagger/docs";
+        });
 
         await app.UseOcelot();
 
