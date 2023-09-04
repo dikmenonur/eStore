@@ -21,6 +21,8 @@ Olay Kaynaklı Mimarileri Kullanma: Veri değişiklikleri ve olaylar, olay kayna
 En İyi Uygulama ve Tasarım Şablonlarının Kullanma: Proje, en iyi uygulama prensiplerine ve tasarım şablonlarına uygun olarak geliştirilecektir. Bu, kodun sürdürülebilirliği ve geliştirilebilirliği için önemlidir.
 
 Bu hedefler doğrultusunda, eTicaret uygulamanızı daha güçlü, ölçeklenebilir ve sürdürülebilir bir şekilde geliştirmeyi amaçlıyoruz.
+![image](https://github.com/dikmenonur/eStore/assets/3075597/f5a1ca1a-1923-42b2-a2cf-d4b148db8381)
+
 ```
 eStore/
 ├── src/
