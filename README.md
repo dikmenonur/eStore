@@ -75,7 +75,7 @@ En İyi Uygulama ve Tasarım Şablonlarının Kullanılması
 - ✔️ **[`Swagger & Swagger UI`](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)** - ASP.NET Core üzerinde oluşturulan API'leri belgelemek için kullanılan Swagger araçları.
 - ✔️ **[`Serilog`](https://github.com/serilog/serilog)** - Tamamen yapılandırılabilir olaylarla basit .NET günlükleme.
 - ✔️ **[`Ocelot`](https://github.com/ThreeMammals/Ocelot)**  - .NET Core kullanılarak oluşturulan bir API ağ geçidi.
-- ✔️ **[`Identity Server 6`](https://duendesoftware.com/products/identityserver)** or **  **[`JSON Web Tokens`]([https://jwt.io/))** - Kimlik hizmeti için kimlik sunucusunu uygulayarak yetkilendirme, kimlik doğrulama ve tek oturum açma (SSO) sağlar.
+- ✔️ **[`Identity Server 6`](https://duendesoftware.com/products/identityserver)** or **  **[`JSON Web Tokens`](https://jwt.io/)** - Kimlik hizmeti için kimlik sunucusunu uygulayarak yetkilendirme, kimlik doğrulama ve tek oturum açma (SSO) sağlar.
 - ✔️ **[`Docker`](https://www.docker.com)**  - Docker ve Konteynerleştirme Hizmetleri
 
 
