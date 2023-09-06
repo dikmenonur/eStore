@@ -21,6 +21,8 @@ Olay Kaynaklı Mimarileri Kullanma: Veri değişiklikleri ve olaylar, olay kayna
 En İyi Uygulama ve Tasarım Şablonlarının Kullanma: Proje, en iyi uygulama prensiplerine ve tasarım şablonlarına uygun olarak geliştirilecektir. Bu, kodun sürdürülebilirliği ve geliştirilebilirliği için önemlidir.
 
 Bu hedefler doğrultusunda, eTicaret uygulamanızı daha güçlü, ölçeklenebilir ve sürdürülebilir bir şekilde geliştirmeyi amaçlıyoruz.
+![image](https://github.com/dikmenonur/eStore/assets/3075597/f5a1ca1a-1923-42b2-a2cf-d4b148db8381)
+
 ```
 eStore/
 ├── src/
@@ -66,27 +68,27 @@ Denetlenebilirlik ve Zaman İçi Sorgular için Olay Kaynaklı
 En İyi Uygulama ve Tasarım Şablonlarının Kullanılması
 
 # 2. Technologies and Libraries
-.NET Core 6 - .NET Core 6
-EF Core - .NET için modern nesne-veritaban eşlemesi. LINQ sorgularını, değişiklik takibini, güncellemeleri ve şema taşınmalarını destekler ve Code First yaklaşımını benimser.
-RabbitMQ - RabbitMQ
-FluentValidation - .NET için popüler bir doğrulama kütüphanesi, güçlü türden doğrulama kuralları oluşturmak için kullanılır.
-Swagger & Swagger UI - ASP.NET Core üzerinde oluşturulan API'leri belgelemek için kullanılan Swagger araçları.
-Serilog - Tamamen yapılandırılabilir olaylarla basit .NET günlükleme.
-Ocelot - .NET Core kullanılarak oluşturulan bir API ağ geçidi.
-Identity Server 6 - Kimlik hizmeti için kimlik sunucusunu uygulayarak yetkilendirme, kimlik doğrulama ve tek oturum açma (SSO) sağlar.
-Docker - Docker ve Konteynerleştirme Hizmetleri
+- ✔️ **[`.NET Core 6`](https://dotnet.microsoft.com/download)**.NET Core 6
+- ✔️ **[`EF Core`](https://github.com/dotnet/efcore)** .NET için modern nesne-veritaban eşlemesi. LINQ sorgularını, değişiklik takibini, güncellemeleri ve şema taşınmalarını destekler ve Code First yaklaşımını benimser.
+- ✔️ **[`RabbitMQ`](https://masstransit.io/)** - RabbitMQ
+- ✔️ **[`FluentValidation`](https://github.com/FluentValidation/FluentValidation)** - .NET için popüler bir doğrulama kütüphanesi, güçlü türden doğrulama kuralları oluşturmak için kullanılır.
+- ✔️ **[`Swagger & Swagger UI`](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)** - ASP.NET Core üzerinde oluşturulan API'leri belgelemek için kullanılan Swagger araçları.
+- ✔️ **[`Serilog`](https://github.com/serilog/serilog)** - Tamamen yapılandırılabilir olaylarla basit .NET günlükleme.
+- ✔️ **[`Ocelot`](https://github.com/ThreeMammals/Ocelot)**  - .NET Core kullanılarak oluşturulan bir API ağ geçidi.
+- ✔️ **[`Identity Server 6`](https://duendesoftware.com/products/identityserver)** or **  **[`JSON Web Tokens`](https://jwt.io/)** - Kimlik hizmeti için kimlik sunucusunu uygulayarak yetkilendirme, kimlik doğrulama ve tek oturum açma (SSO) sağlar.
+- ✔️ **[`Docker`](https://www.docker.com)**  - Docker ve Konteynerleştirme Hizmetleri
 
 
 # 3. Structure of services
 Her bir servisimiz, temiz bir mimariye sahiptir ve bu mimari dört temel bölümden oluşur:
 
-API Katmanı: Bu katman, mikroservisi .NET Core Web API üzerinde barındırma görevini üstlenir ve aynı zamanda dokümantasyon için Swagger'ı kullanır.
+- **API** - Katmanı: Bu katman, mikroservisi .NET Core Web API üzerinde barındırma görevini üstlenir ve aynı zamanda dokümantasyon için Swagger'ı kullanır.
 
-Uygulama Katmanı: Uygulama katmanı, modülle ilgili kullanım senaryolarının uygulanmasını içerir. İsteklerin işlenmesi bu katmanın sorumluluğundadır. Ayrıca, bu katman kullanım senaryolarını, domain olaylarını, entegrasyon olaylarını ve bunların sözleşmelerini, iç komutları içerir.
+- **Data** Katmanı: Uygulama katmanı, modülle ilgili kullanım senaryolarının uygulanmasını içerir. İsteklerin işlenmesi bu katmanın sorumluluğundadır. Ayrıca, bu katman kullanım senaryolarını, domain olaylarını, entegrasyon olaylarını ve bunların sözleşmelerini, iç komutları içerir.
 
-Domain Katmanı: Domain Katmanı, Domain-Driven Design (DDD) terimleriyle ifade edilen, ilgili Sınırlı Bağlamı temsil eder. Bu katmanda, uygulamanın iş mantığını temsil eden domain varlıkları ve kuralları bulunur.
+- **Core** Katmanı: Domain Katmanı, Domain-Driven Design (DDD) terimleriyle ifade edilen, ilgili Sınırlı Bağlamı temsil eder. Bu katmanda, uygulamanın iş mantığını temsil eden domain varlıkları ve kuralları bulunur.
 
-Altyapı Katmanı: Altyapı katmanı, dışsal bağımlılıklarla iletişim kurmak için kullanılan sekonder adaptörlerin uygulandığı katmandır. Sekonder adaptörler, dış bağımlılıklarla iletişimden sorumludur. Ayrıca, altyapı kodu modülün başlatılmasından, arka planda işlem yapılmasından, veri erişiminden, Olay Otobüsü ile iletişim kurmaktan ve diğer harici bileşenler veya sistemlerle iletişim kurmaktan sorumludur.
+- **Services** Katmanı: Altyapı katmanı, dışsal bağımlılıklarla iletişim kurmak için kullanılan sekonder adaptörlerin uygulandığı katmandır. Sekonder adaptörler, dış bağımlılıklarla iletişimden sorumludur. Ayrıca, altyapı kodu modülün başlatılmasından, arka planda işlem yapılmasından, veri erişiminden, Olay Otobüsü ile iletişim kurmaktan ve diğer harici bileşenler veya sistemlerle iletişim kurmaktan sorumludur.
 
 Bu düzenleme, her katmanın görevlerini ve işlevlerini daha açık bir şekilde tanımlar ve okuyucuların projenizin yapısını daha iyi anlamalarına yardımcı olur.
 
