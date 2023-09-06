@@ -41,7 +41,7 @@ namespace eStore.IdentityService.API.Controllers
         public async Task<IActionResult> AuthenticateTest([FromBody] AuthenticateModel model)
         {
             model.Password = Utilities.Encrpyt(model.Password);
-            var user = await _basicAuthenticationServices.Authenticate(model.Username, model.Password);
+            var user = await _basicAuthenticationServices.AuthenticateTest(model.Username, model.Password);
 
             if (user == null)
                 return base.StatusCode<AuthenticateModel>(HttpStatusCode.Unauthorized, model, false);
