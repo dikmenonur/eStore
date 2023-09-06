@@ -14,7 +14,7 @@ namespace eStore.Contracts.Domains.Interface
    where TContext : DbContext
     {
         private readonly TContext _context;
-        public RepositoryBase(TContext context)
+        public DataSourceBase(TContext context)
         {
             _context = context;
         }

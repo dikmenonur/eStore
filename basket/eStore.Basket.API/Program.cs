@@ -27,7 +27,6 @@ internal class Program
         {
             options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
         });
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.AddScoped<ISerializeService, SerializeService>();
@@ -38,12 +37,6 @@ internal class Program
             {
               
             });
-
-        //builder.Services.AddGrpcClient<StockProtoService.StockProtoServiceClient>(options =>
-        //{
-        //    options.Address = new Uri("http://localhost:5174"); // Replace with the actual gRPC server URL
-        //});
-        //builder.Services.AddTransient<StockItemGrpcService>();
 
         builder.Services.AddTransient<IIntegrationEventHandler<ProductPriceChangedIntegrationEvent>, ProductPriceChangedIntegrationEventHandler>();
 
@@ -70,7 +63,7 @@ internal class Program
         });
 
         var app = builder.Build();
-
+        app.Urls.Add("http://*:5002");
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
