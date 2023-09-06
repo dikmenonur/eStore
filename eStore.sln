@@ -50,6 +50,7 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eStore.Basket.Services", "basket\eStore.Basket.Services\eStore.Basket.Services.csproj", "{2CCAE58D-1408-4876-A37C-A3F56C5F3383}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eStore.IdentityService.API", "services\Identity\eStore.IdentityService.API\eStore.IdentityService.API.csproj", "{4FE7BFE6-9948-4AA2-9970-FF620F9713D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eStore.Contracts", "tools\eStore.Contracts\eStore.Contracts.csproj", "{4D6ED805-6AC2-4C6D-B508-7EBA2A611840}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +118,10 @@ Global
 		{4FE7BFE6-9948-4AA2-9970-FF620F9713D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FE7BFE6-9948-4AA2-9970-FF620F9713D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FE7BFE6-9948-4AA2-9970-FF620F9713D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D6ED805-6AC2-4C6D-B508-7EBA2A611840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D6ED805-6AC2-4C6D-B508-7EBA2A611840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D6ED805-6AC2-4C6D-B508-7EBA2A611840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D6ED805-6AC2-4C6D-B508-7EBA2A611840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,6 +147,7 @@ Global
 		{46E54AED-6A0E-4142-88BF-822516E62852} = {8AAC2B88-F2DB-4B09-9EDE-222564120FC4}
 		{2CCAE58D-1408-4876-A37C-A3F56C5F3383} = {8AAC2B88-F2DB-4B09-9EDE-222564120FC4}
 		{4FE7BFE6-9948-4AA2-9970-FF620F9713D8} = {930A5605-4C5C-42A7-A718-263E9AA32D71}
+		{4D6ED805-6AC2-4C6D-B508-7EBA2A611840} = {870AED6B-062B-44B3-B69C-F6A0437D203B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {043EAC49-773B-42AC-B7FE-CDA7F0EDC6B8}
