@@ -78,6 +78,7 @@ En İyi Uygulama ve Tasarım Şablonlarının Kullanılması
 - ✔️ **[`Identity Server 6`](https://duendesoftware.com/products/identityserver)** or **  **[`JSON Web Tokens`](https://jwt.io/)** - Kimlik hizmeti için kimlik sunucusunu uygulayarak yetkilendirme, kimlik doğrulama ve tek oturum açma (SSO) sağlar.
 - ✔️ **[`Docker`](https://www.docker.com)**  - Docker ve Konteynerleştirme Hizmetleri
 
+![image](https://github.com/dikmenonur/eStore/assets/3075597/04ac17af-4972-424b-88bc-afd4655dffb2)
 
 # 3. Structure of services
 Her bir servisimiz, temiz bir mimariye sahiptir ve bu mimari dört temel bölümden oluşur:
